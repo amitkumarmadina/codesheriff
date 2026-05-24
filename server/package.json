@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --check src/index.js && node --check src/routes/webhook.js && node --check src/routes/Review.js && node --check src/services/reviewService.js && node --check src/services/githubService.js && node --check src/services/openaiService.js && node --check src/models/Review.js && node --check src/config/db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-app": "^8.2.0",
+    "@octokit/rest": "^22.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2",
+    "openai": "^6.38.0"
+  }
+}
